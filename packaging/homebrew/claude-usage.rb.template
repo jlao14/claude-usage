@@ -1,0 +1,21 @@
+cask "claude-usage" do
+  version "{{VERSION}}"
+  sha256 "{{SHA256}}"
+
+  url "https://github.com/{{OWNER}}/{{REPO}}/releases/download/v#{version}/Claude-Usage-#{version}.zip"
+  name "Claude Usage"
+  desc "Unofficial menu bar app showing Claude plan limits and Claude Code costs"
+  homepage "https://github.com/{{OWNER}}/{{REPO}}"
+
+  depends_on macos: ">= :sonoma"
+
+  app "Claude Usage.app"
+
+  zap trash: "~/Library/Preferences/{{BUNDLE_ID}}.plist"
+
+  caveats <<~EOS
+    Claude Usage is not notarized by Apple, so macOS blocks it the first time.
+    Open it once, then go to System Settings > Privacy & Security and click
+    "Open Anyway" next to the Claude Usage message.
+  EOS
+end

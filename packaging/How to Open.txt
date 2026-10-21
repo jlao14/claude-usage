@@ -1,0 +1,34 @@
+CLAUDE USAGE - HOW TO OPEN
+
+Claude Usage is a small menu bar app. It shows how much of your Claude
+plan you've used and what your Claude Code sessions would cost.
+It's an unofficial app, not made by Anthropic.
+
+YOU NEED
+- macOS 14 Sonoma or later
+- Claude Code, signed in with your Claude account (for the plan limits)
+
+INSTALL
+1. Drag "Claude Usage" onto the Applications folder in this window.
+2. Open Applications and double-click Claude Usage.
+
+FIRST LAUNCH
+Apple hasn't reviewed this app, so macOS blocks it the first time.
+1. When macOS says it can't verify the developer, click Done.
+2. Open System Settings > Privacy & Security.
+3. Scroll down and click "Open Anyway" next to the Claude Usage
+   message, then confirm.
+4. When asked about the Keychain, click "Always Allow". This lets the
+   app read the login Claude Code already saved.
+5. Allow notifications if you want alerts at 50%, 75% and 90% usage.
+
+A gauge icon then appears in the menu bar. Click it to see your usage.
+Open Settings from that menu to change alerts and the menu bar display.
+
+PRIVACY
+- Your Claude login is sent only to api.anthropic.com, to read your usage.
+- Claude Code's local logs are read on your Mac and never uploaded.
+- No analytics, no tracking.
+
+UNINSTALL
+Quit it from its menu, then drag Claude Usage from Applications to the Trash.
